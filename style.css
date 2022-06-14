@@ -28,3 +28,11 @@ img {
     background-color: rgb(14, 14, 86);
     color:bisque;
 }
+@media screen and (max-width: 550px) {
+    .main-menu{
+        position:relative;
+        align-content:center;
+        width: 100%;
+        left: 0px;
+        right:0px;
+    }}
