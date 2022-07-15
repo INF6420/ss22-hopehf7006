@@ -35,6 +35,10 @@ img {
         left: 0;
         right:0;
     }}
+.form{
+    width:50%;
+    margin: 10px;
+}
 
 .portrait{
     display: block;
@@ -49,4 +53,51 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+}
+
+label{
+    display: block;
+    margin: 10px
+}
+
+.form-input{
+    display:block;
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 2px solid gray
+}
+
+.form-input:focus{
+    outline:none;
+    border: 2px solid black
+}
+
+[type="submit"]{
+    width:50%;
+    background:rgb(14, 14, 86);
+    color:bisque;
+    font-size:large;
+    border:0;
+    cursor:pointer;
+    margin-bottom:10px;
+    padding: 10px;
+}
+
+[type="submit"]:hover,
+[type="submit"]:focus{
+    background: navy
+}
+
+textarea{
+    height:100px;
+    resize:vertical
+}
+
+.error{
+    border:red
+}
+
+.error-message{
+    color:red
 }
