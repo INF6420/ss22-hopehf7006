@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hope Velthouse: Librarian</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>HOPE VELTHOUSE: LIBRARIAN</header>
-<nav>
-    <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="about.html">ABOUT ME</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+<header class="header">HOPE VELTHOUSE: LIBRARIAN</header>
+<nav class="main-menu">
+    <ul style="list-style-type:none">
+        <li>&#9734;&#160;&#160;<a href="index.html">HOME</a></li>
+        <li>&#9734;&#160;&#160;<a href="projects.html">PROJECTS</a></li>
+        <li>&#9734;&#160;&#160;<a href="about.html">ABOUT ME</a></li>
+        <li>&#9734;&#160;&#160;<a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
 <main>
 <div>
-    <h1>let's connect!</h1>
+    <h1 class="greeting">let's connect!</h1>
     <ul>
-        <li>email: hopebylight@gmail.com</li>
-        <li>wordpress: hopebylight.wordpress.com</li>
-        <li>address: 3242 Renwick Ct, Zeeland MI 49464</li>
+        <li>poetry: <a href="www.hopebylight.wordpress.com" target="_blank">Hope By Write</a></li>
+        <li>mailing address: 3242 Renwick Ct, Zeeland MI 49464</li>
     </ul>
+    <form class="validate"
+    action="https://formspree.io/f/mnqwkeao"
+    method="POST"
+  >
+    <label>
+        Name
+        <input class="form-input" name="name">
+    </label>
+    <label>
+      Email
+      <input required class="form-input" type="email" name="email">
+    </label>
+    <label>
+      Message
+      <textarea required input class="form-input" id="message" name="message"></textarea>
+    </label>
+
+    <button type="submit">Send</button>
+  </form>
+  
 </div>
 </main>
-<footer>
-All content copywright Hope Velthouse 2022
+<footer class="footer">
+    All content copyright Hope Velthouse &#160;&#160;
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
