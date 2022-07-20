@@ -4,15 +4,19 @@ body {
     color:rgb(14, 14, 86);
     font-family:Arial, Helvetica, sans-serif;
 }
+
 a {
     color:rgb(14, 14, 86)
 }
+
 img {
     max-width: 100%;
 }
+
 .header{
     text-align: center;
     font-size: x-large;}
+
 .main-menu{
     position: absolute;
   right: 10px;
@@ -20,21 +24,31 @@ img {
   border: 3px solid;
   padding: 0;
 }
+
 .greeting{
     font-family: cursive;
 }
+
 .footer{
     background-color: rgb(14, 14, 86);
     color:bisque;
 }
+
 @media screen and (max-width: 550px) {
     .main-menu{
         position:relative;
-        align-content:center;
-        width: 100%;
+        margin:auto;
         left: 0;
-        right:0;
+        right: 0;
+        line-height: 2;
     }}
+
+ @media screen and (max-width: 550px) {
+    .intro{
+        padding:10px
+    }
+ }
+        
 .form{
     width:50%;
     margin: 10px;
@@ -44,7 +58,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 750px;
+    height:max-content;
+    padding:25px;
     border-radius: 50%;
 }
 
@@ -52,7 +68,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width:500px;
+    height:max-content;
+    padding-bottom: 10px;
 }
 
 label{
@@ -81,7 +99,9 @@ label{
     border:0;
     cursor:pointer;
     margin-bottom:10px;
-    padding: 10px;
+    padding: 8px;
+    position: relative;
+    left: 10px
 }
 
 [type="submit"]:hover,
@@ -100,4 +120,22 @@ textarea{
 
 .error-message{
     color:red
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+.intro{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.license{
+    width:100px;
+    height:20px
 }
